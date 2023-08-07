@@ -1,32 +1,26 @@
-import './App.css';
-import shoe from './assert/shoe.jpg';
-import Product1 from './task/Product1';
-function App(){
-return(
-    <div>
-    <h1 style={{textAlign:'center'}}>Product</h1>
-        <div className='App' style={{display:'flex'}}>
-            <Product1
-                img={shoe}
-                name='Adidas'
-                discount=' Buy one Get One free'
-                price='$350'
-            />
-             <Product1
-                img={shoe}
-                name='Adidas'
-                discount=' Buy one Get One free'
-                price='$350'
-            />
-             <Product1
-                img={shoe}
-                name='Adidas'
-                discount=' Buy one Get One free'
-                price='$350'
-            />
-
+import  './App.css';
+import Task from './component/Task';
+import Tassk1 from './component/Tassk1';
+import TaskThree from './component/TaskThree';
+import Taskfour from './component/Taskfour';
+import ProductPage from './component/ProductPage';
+import TodoList from './component/TodoList';
+import Home from './component/Home';
+import TaskTwo from './component/TaskTwo';
+function App() {
+    return (
+        <div>
+           {/*<Demo/>
+           <TaskThree/> */}
+          <Task/>
+          <Tassk1/>
+          <TaskThree/>
+          <Taskfour/>
+          <TaskTwo/>
+          <ProductPage/>
+          <TodoList/>
+          <Home/>
         </div>
-    </div>
-)
+    )
 }
 export default App;
